@@ -70,22 +70,59 @@
         .btn-nav:hover { background: rgba(255,255,255,0.3); }
         .btn-active { background: white; color: #1e3a8a; }
         .numero { font-size: 2rem; font-weight: bold; }
+        .header-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .logo-incentivabr {
+            max-height: 80px;
+            width: auto;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .logo-gdf {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            font-weight: bold;
+            color: #1e40af;
+            text-align: center;
+            min-width: 150px;
+        }
         @media (max-width: 768px) {
             .titulo { font-size: 2rem; }
             .destaque { font-size: 2.5rem; }
             .grid { grid-template-columns: 1fr; }
+            .header-logos { flex-direction: column; gap: 20px; }
+            .logo-incentivabr { max-height: 60px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
+        <!-- Header com Logos -->
         <div class="header">
+            <div class="header-logos">
+                <!-- Logo IncentivaBR - usando a imagem real -->
+                <img src="logo-incentivabr.png" alt="IncentivaBR" class="logo-incentivabr">
+                
+                <!-- Logo GDF (placeholder até conseguir a oficial) -->
+                <div class="logo-gdf">
+                    🏛️<br>
+                    <strong>GOVERNO DO<br>DISTRITO FEDERAL</strong>
+                </div>
+            </div>
+            
             <div style="display: inline-flex; align-items: center; background: rgba(255,255,255,0.1); padding: 15px 30px; border-radius: 50px; margin-bottom: 20px;">
                 🚀
                 <div style="margin-left: 15px;">
-                    <h1 style="font-size: 1.5rem; margin: 0;">IncentivaBR para GDF</h1>
-                    <p style="margin: 0; opacity: 0.8;">Apresentação Estratégica para Gestores</p>
+                    <h1 style="font-size: 1.5rem; margin: 0;">Apresentação Estratégica para Gestores</h1>
+                    <p style="margin: 0; opacity: 0.8;">Potencial de R$ 139 Milhões no DF</p>
                 </div>
             </div>
             
@@ -262,6 +299,28 @@
                         </ul>
                     </div>
                 </div>
+
+                <div style="background: linear-gradient(135deg, #f59e0b, #ea580c); color: white; border-radius: 15px; padding: 30px; text-align: center; margin-top: 30px;">
+                    <h3 style="margin-bottom: 15px;">🏆 PIONEIRISMO E EXCLUSIVIDADE</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">
+                        A IncentivaBR é a <strong>PRIMEIRA e ÚNICA</strong> plataforma do Brasil especializada 
+                        em destinação de IR para servidores públicos
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px;">
+                        <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 10px;">
+                            <div style="font-size: 1.5rem; font-weight: bold;">1ª</div>
+                            <div style="font-size: 0.9rem;">Plataforma do gênero</div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 10px;">
+                            <div style="font-size: 1.5rem; font-weight: bold;">100%</div>
+                            <div style="font-size: 0.9rem;">Focada em servidores</div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 10px;">
+                            <div style="font-size: 1.5rem; font-weight: bold;">INPI</div>
+                            <div style="font-size: 0.9rem;">Tecnologia protegida</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -304,6 +363,25 @@
                             <div style="font-size: 1.2rem; color: #16a34a; font-weight: bold;">R$ 34.7M</div>
                             <div style="color: #666;">75 projetos</div>
                             <div style="color: #2563eb;">175,000 beneficiados</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #16a34a, #2563eb); color: white; border-radius: 15px; padding: 30px; text-align: center; margin-top: 30px;">
+                    <h3 style="margin-bottom: 20px;">🌟 TRANSFORMAÇÃO DO DF</h3>
+                    <p style="font-size: 1.2rem; margin-bottom: 25px;">
+                        Em 4 anos, o DF pode ser <strong>referência nacional</strong> em destinação de IR por servidores públicos
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                        <div>
+                            <h4 style="margin-bottom: 10px;">Potencial Atual</h4>
+                            <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 5px;">R$ 139M</div>
+                            <div style="opacity: 0.9;">Recursos disponíveis anualmente</div>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 10px;">Com IncentivaBR</h4>
+                            <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 5px;">R$ 34.7M</div>
+                            <div style="opacity: 0.9;">Meta realística em 4 anos</div>
                         </div>
                     </div>
                 </div>
